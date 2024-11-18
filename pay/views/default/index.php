@@ -20,7 +20,7 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'email')->textInput() ?>
   </div>
 
-  <?= $form->field($model, 'payment_id')->hiddenInput(['payment_id' => $model->payment_id]) ?>
+  <?= $form->field($model, 'payment_id')->hiddenInput(['payment_id' => $model->payment_id])->label(false) ?>
   <button id="card-button">Submit Payment</button>
 <?php ActiveForm::end(); ?>
 </div>
